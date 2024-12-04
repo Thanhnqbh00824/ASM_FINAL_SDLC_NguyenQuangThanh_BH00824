@@ -1,0 +1,111 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+/* Center the login container */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 100px auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Form title */
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Button styling */
+.btn {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Error message styling */
+.error {
+    color: #d9534f;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Sign Up Button Styling */
+.signup-container {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signup-link {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
+
+/* Success message styling */
+.success {
+    color: #28a745;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    .login-container {
+        padding: 15px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}

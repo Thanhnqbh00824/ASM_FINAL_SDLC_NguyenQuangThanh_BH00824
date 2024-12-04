@@ -1,0 +1,186 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #0073e6;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #0073e6;
+    padding-bottom: 5px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #0073e6;
+    color: #fff;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Buttons and Forms */
+form {
+    display: inline-block;
+    margin: 0;
+}
+
+input[type="number"],
+textarea,
+button {
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: calc(100% - 20px);
+    font-size: 14px;
+}
+
+button {
+    background-color: #0073e6;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    width: auto;
+    padding: 10px 20px;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+input[type="number"]:focus, textarea:focus {
+    outline: 2px solid #0073e6;
+}
+
+/* Success Message */
+p {
+    font-size: 16px;
+}
+
+p[style="color: green;"] {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table {
+        font-size: 12px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* Style for category filter */
+section ul {
+    list-style-type: none; /* Remove default list bullets */
+    padding: 0;
+    display: flex; /* Display list items in a row */
+    justify-content: center; /* Center the items horizontally */
+}
+
+section ul li {
+    margin-right: 15px; /* Space between filter options */
+}
+
+section ul li a {
+    display: block; /* Make the link fill the entire list item */
+    padding: 10px 20px; /* Space inside the box */
+    background-color: #0073e6; /* Blue background */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+section ul li a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
